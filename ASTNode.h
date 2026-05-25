@@ -4,6 +4,7 @@
 #include "pyc_module.h"
 #include <list>
 #include <deque>
+#include <string>
 
 /* Similar interface to PycObject, so PycRef can work on it... *
  * However, this does *NOT* mean the two are interchangeable!  */
@@ -18,7 +19,7 @@ public:
         NODE_COMPREHENSION, NODE_LOADBUILDCLASS, NODE_AWAITABLE,
         NODE_FORMATTEDVALUE, NODE_JOINEDSTR, NODE_CONST_MAP,
         NODE_ANNOTATED_VAR, NODE_CHAINSTORE, NODE_TERNARY,
-        NODE_KW_NAMES_MAP,
+        NODE_KW_NAMES_MAP, NODE_UNSUPPORTED,
 
         // Empty node types
         NODE_LOCALS,
@@ -103,6 +104,17 @@ public:
 
 private:
     PycRef<PycObject> m_obj;
+};
+
+class ASTUnsupported : public ASTNode {
+public:
+    ASTUnsupported(std::string text)
+        : ASTNode(NODE_UNSUPPORTED), m_text(std::move(text)) { }
+
+    const std::string& text() const { return m_text; }
+
+private:
+    std::string m_text;
 };
 
 
