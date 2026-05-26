@@ -130,3 +130,15 @@ GNU General Public License v3.0。
 
 个人主页：  
 https://space.bilibili.com/1934537611
+
+## 赞赏
+
+如果这个项目帮到了你，欢迎赞赏支持。
+
+![赞赏码](../assets/sponsor-qr.jpg)
+
+USDT-TRC20：<br>
+[TRKeWXWc1GL7ARE1sX5rBDcYg9yStFsmnU](https://tronscan.org/#/address/TRKeWXWc1GL7ARE1sX5rBDcYg9yStFsmnU)
+
+USDT-Solana：<br>
+[BrKPdDdF8NY8k1f4A7RfN1inSDsxZ2d1atDHvGLjp23G](https://solscan.io/account/BrKPdDdF8NY8k1f4A7RfN1inSDsxZ2d1atDHvGLjp23G)

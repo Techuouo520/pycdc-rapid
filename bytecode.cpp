@@ -296,7 +296,7 @@ void bc_next(PycBuffer& source, PycModule* mod, int& opcode, int& operand, int& 
     if (mod->verCompare(3, 6) >= 0) {
         operand = source.getByte();
         pos += 2;
-        if (opcode == Pyc::EXTENDED_ARG_A) {
+        while (opcode == Pyc::EXTENDED_ARG_A && !source.atEof()) {
             opcode = Pyc::ByteToOpcode(mod->majorVer(), mod->minorVer(), source.getByte());
             operand = (operand << 8) | source.getByte();
             pos += 2;

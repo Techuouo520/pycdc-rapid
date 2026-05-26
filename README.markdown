@@ -130,3 +130,15 @@ See `LICENSE` for details.
 
 Personal homepage:  
 https://space.bilibili.com/1934537611
+
+## Sponsor
+
+If this project helps you, donations are appreciated.
+
+![Sponsor QR code](docs/assets/sponsor-qr.jpg)
+
+USDT-TRC20:<br>
+[TRKeWXWc1GL7ARE1sX5rBDcYg9yStFsmnU](https://tronscan.org/#/address/TRKeWXWc1GL7ARE1sX5rBDcYg9yStFsmnU)
+
+USDT-Solana:<br>
+[BrKPdDdF8NY8k1f4A7RfN1inSDsxZ2d1atDHvGLjp23G](https://solscan.io/account/BrKPdDdF8NY8k1f4A7RfN1inSDsxZ2d1atDHvGLjp23G)
