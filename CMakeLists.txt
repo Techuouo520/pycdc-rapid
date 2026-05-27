@@ -73,6 +73,9 @@ install(TARGETS pycdas
 
 add_executable(pycdc pycdc.cpp ASTree.cpp ASTNode.cpp)
 target_link_libraries(pycdc pycxx)
+if(MSVC)
+    target_link_options(pycdc PRIVATE /STACK:16777216)
+endif()
 
 install(TARGETS pycdc
     RUNTIME DESTINATION bin)
